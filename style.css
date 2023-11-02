@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans';
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(45, 38, 38);
+    color: rgba(97, 49, 179, 0.648);
+
+      
+}
+
+.watch {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.container {
+    display: flex;
+    background-color: rgb(8, 9, 9);
+    width: 500px;
+    height: 400px;
+    font-size: 40px;
+    font-weight: 700;
+    border-style: solid;
+    border-color: rgba(78, 116, 97, 0.419);
+    border-width: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(64, 185, 82, 0.558);
+    justify-content: space-between; 
+    text-align: center;
+    flex-direction: column;
+    
+    
+}
+
+.full-time-display {
+    display: flex;
+    justify-content:center;
+       
+}
+
+.time-display {
+    display: flex;
+    min-width: 165px;
+    
+}
+
+.display-hours,
+.display-minutes,
+.display-seconds {
+    min-width: 5px;
+
+    
+}
+
+
+.time {
+    display: flex;
+    border-style: solid;
+    font-size: 15px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+
+.stopwatch-clock-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}    
+
+
+ .stopwatch-button, .clock-button, .timer-button  {
+    background-color: transparent;
+    color: rgb(72, 213, 112);
+    width: 110px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.all-buttons-class {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 115px;
+
+}
+
+.start-stop-reset-button {
+    display: none;
+
+}
+
+.internal-buttons-class {
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+
+.internal-buttons-class .stopwatch-clicked {
+    display: flex;
+    gap: 70px;
+    
+}
+
+.internal-buttons-class .stopwatch-clicked button {
+    background-color: transparent;
+    color: rgb(72, 213, 112);
+    width: 55px;
+    padding: 2px 5px;
+    cursor: pointer;
+
+}
+
+
+.time-form-display {
+    
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 2px;
+    display: none;
+    
+}
+
+.time-form-display .timer-input-form{
+   
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    
+
+}
+
+.time-form-display .timer-input-form input {
+    height: 35px;
+    text-align: center;
+
+}
+
+.time-form-display .start-timer-div{
+    display: flex;
+    align-self: center;
+    gap: 70px;
+    margin-top: 0px;
+
+}
+
+.time-form-display .start-timer-div button {
+    background-color: transparent;
+    color: rgb(72, 213, 112);
+    width: 55px;
+    padding: 2px 5px;
+    cursor: pointer
+
+}
+
+
+.timer-clicked {
+    display: flex;
+
+}
+
+.timerError {
+    font-size: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(134, 37, 37)
+    
+
+}
+
+.error-time {
+    display: flex;
+    height: 5px;
+    justify-content: center;
+    
+}
+
+
+
+ 
+    @media (max-width: 768px) {
+    .container {
+        width: 350px;
+        
+    }
+
+    .stopwatch-clock-timer{
+        justify-content: center;
+    }
+    
+    .stopwatch-button, .clock-button, .timer-button  {
+        background-color: transparent;
+        color: rgb(72, 213, 112);
+        width: 95px;
+        padding: 7px 10px;
+        cursor: pointer;
+    } 
+     
+   }  

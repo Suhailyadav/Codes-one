@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Roboto:wght@400;500;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="watch">
+        <div class="container">
+            <div class="full-time-display"> 
+                <div class="time-display">
+                    <div class="display-hours hs">00</div>
+                    <div class="colon">:</div>
+                    <div class="display-minutes ms">00</div>
+                    <div class="colon">:</div>
+                    <div class="display-seconds ss">00</div>
+                </div>   
+                <div class="time time-period" id="time-ms"></div>
+            </div>    
+                   
+            <div class="all-buttons-class">
+                <div class="stopwatch-clock-timer">  
+                    <div class="stopwatch">
+                            <button onclick="
+                            displayStopwatch();   
+                            " class="stopwatch-button" id="stopwatchbutton">
+                            Stopwatch
+                            </button>        
+                    </div>
+
+                    <div class="clock">
+                        <button onclick="displayClock();
+                        " class="clock-button" id="watchbutton">
+                        Watch
+                        </button>
+                    </div>
+
+                    <div class="timer timer-period">
+                        <button onclick="setTimer();
+                        " class="timer-button" id="timerbutton">
+                        Timer
+                        </button>     
+                    
+                    </div>
+                </div>   
+                
+
+
+
+                <div class="internal-buttons-class">
+                    <div class="start-stop-reset-button  s-s-p">
+                        <button onclick="
+                            startStopwatch();
+                            " id ="stopwatch-start">
+                            start
+                        </button>
+                        <button onclick="
+                            stopStopwatch();
+                            " id = "stopwatch-stop">
+                            stop
+                        </button> 
+                        <button onclick="
+                            resetStopwatch();
+                            " id = "stopwatch-reset">
+                            reset
+                        </button>
+                    </div>
+                    <div class="time-form-display">
+                                <div class="timer-input-form">
+                                    <div class="timer-input">
+                                    <input class="input-hours" type="number" placeholder="" name="time" min="0" max="12">
+                                    <input class="input-minutes" type="number" placeholder="" name="minutes" min="0" max="59">
+                                    <input class="input-seconds" type="number" placeholder="" name="seconds" min="0" max="59">
+                                    </div>
+                                    <div class="error-time">
+                                    <span class="timerError"></span>
+                                    </div>
+                                </div>
+                               
+                                <div class="start-timer-div">
+                                    <button onclick="startTimer();
+                                    " id = "timer-start">
+                                        start
+                                    </button>
+                                    <button onclick="stopTimer();
+                                    " id = "timer-stop">
+                                        stop
+                                    </button>
+                                    <button onclick="resetTimer();
+                                    " id="timer-reset">
+                                        reset
+                                    </button>
+                                </div>    
+                    
+                    </div>  
+    
+                </div>  
+            </div>
+        </div>
+    </div>                        
+    <script src="script0.js"></script>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    
+</body>
+</html>
+
+
+
